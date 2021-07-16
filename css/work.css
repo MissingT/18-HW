@@ -30,6 +30,7 @@ body {
   }
   
 
+
   
   .sideBlue {
     height: 100%;
@@ -67,7 +68,7 @@ body {
       border-bottom: navy 2px solid;
       border-left: navy 2px solid;
       margin-left: -2px;
-      background-color: white;
+      background-color: ;
       transition: 0.3s ease;
   
   
@@ -90,6 +91,10 @@ body {
       margin-left: -2px;
   }
   
+    #leftMostnav {
+    background-color: navy;
+    color: white;
+  }
 
   
   section {
@@ -231,6 +236,7 @@ body {
   background-color: navy;
   color: whitesmoke;
   border-radius: 0px 0px 0px 0px;
+  border-left: 1px white solid;
   
 }
 
@@ -337,6 +343,8 @@ p {
     color: whitesmoke;
     transition: 0.3s ease;
     border-radius: 0px 0px 0px 0px;
+    border-right: 1px solid white;
+    z-index: 2;
   }
 
   .tab:hover {
@@ -344,6 +352,13 @@ p {
     color: whitesmoke;
     border-radius: 0px 0px 0px 0px;
     
+  }
+
+  #middleMostnav:hover {
+    background-color: navy;
+    color: white;
+    border-left: white 1px  solid ;
+    z-index: 1;
   }
 
   #rightMostnav:hover {

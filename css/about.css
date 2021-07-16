@@ -8,7 +8,7 @@ body {
       width: 700px;
   
   }
-  
+
   .logo {
       font-family: termina,sans-serif;
       font-weight: 700;
@@ -29,7 +29,13 @@ body {
   
   }
   
-
+  #middleMostnav {
+    background-color: navy;
+    color: white;
+    border-left: white 1px  solid ;
+    border-right: white 1px  solid ;
+    z-index: 1;
+  }
   
   .sideBlue {
     height: 100%;
@@ -62,19 +68,18 @@ body {
       font-weight: 400;
       font-size: 18px;
       font-style: normal;
-      color: navy;
       border-right: navy 2px solid;
       border-bottom: navy 2px solid;
       border-left: navy 2px solid;
       margin-left: -2px;
-      background-color: white;
       transition: 0.3s ease;
-  
-  
-  
   
   }
   
+  #leftMostnav {
+    background-color: white;
+    color: navy;
+  }
 
   
   #rightMostnav {
@@ -158,8 +163,18 @@ body {
     line-height: 64px;
 }
 
+.hey3 {
+  width: 400px;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+}
   @media only screen and (max-width: 600px) {
 
+
+    
 .sideBlue {
   display: none;
 }
@@ -230,7 +245,7 @@ body {
   background-color: navy;
   color: whitesmoke;
   border-radius: 0px 0px 0px 0px;
-  
+ 
 }
 
 #rightMostnav {
@@ -253,7 +268,20 @@ body {
   color: whitesmoke;
   transition: 0.3s ease;
   border-radius: 0px 0px 0px 0px; 
+  border-top: 2px white solid;
+
 }
+
+#leftMostnav:active {
+  background-color: navy;
+  color: whitesmoke;
+  transition: 0.3s ease;
+  border-radius: 0px 0px 0px 0px; 
+  border-bottom: 2px white solid;
+
+}
+
+
 
 .logo:active {
   background-color: navy;
@@ -289,6 +317,11 @@ p {
   font-style: normal;
   font-size: 32px;
   margin: -10px 10px 10px 10px;
+  
+}
+
+a {
+  text-decoration: none;
 }
 
 #bottomHey {
@@ -356,6 +389,12 @@ p {
     border-radius: 0px 0px 50px 0px;
   }
 
+  #leftMostnav:hover {
+    background-color: navy;
+    color: whitesmoke;
+    border-radius: 0px 0px 0px 0px;
+  }
+
   .workModal:hover {
     transform: translateY(-20px) scale(105%);
     box-shadow: 5px 5px 15px rgb(196, 196, 196);
@@ -385,6 +424,19 @@ p {
     font-style: normal;
     font-size: 32px;
     margin: -20px 10px 10px 10px;
+    text-decoration: none;
   }
 
+  a:hover {
+    text-decoration: underline;
+    color: navy;
+    cursor: url(../images/cursor_hover.png), auto;
+  }
+
+}
+
+.contactList:hover {
+  transition: 0.3 ease;
+  font-weight: 700;
+  cursor: url(../images/cursor_hover.png), auto;
 }
